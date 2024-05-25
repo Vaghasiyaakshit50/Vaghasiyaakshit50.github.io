@@ -40,8 +40,8 @@
   }
 
   header .icon {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     margin-left: 10px;
   }
 
@@ -75,6 +75,7 @@
     flex: 2;
     margin-right: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
   }
 
   .favourite-photos {
@@ -87,6 +88,7 @@
   .welcome h2, .favourite-photos h2 {
     font-family: Fantasy, sans-serif;
     color: #000;
+    font-size: xx-large;
   }
 
   .photos-grid {
@@ -116,27 +118,41 @@
 <body>
   <header>
     <div class="logo">
-      <h1>Birdwatching</h1>
-      <img src="images/dove.png" alt="a simple dove logo" class="icon">
+      <!-- <h1>Birdwatching</h1> -->
+      <h1 style="font-family: 'Apple Chancery', cursive; padding: 20px 20px; font-size: 3em;">Birdwatching</h1>
+      <!-- <img src="images/dove.png" alt="a simple dove logo" class="icon"> -->
+      <img src="images/dove.png" alt="a simple dove logo" class="icon" style="position: absolute; top: 0; right: 0; margin-top: 30px; margin-right: 30px;">
     </div>
-    <nav>
-      <ul>
-        <li><span>HOME</span></li>
-        <li><a href="#">Get started</a></li>
-        <li><a href="#">Photos</a></li>
-        <li><a href="#">Gear</a></li>
-        <li><a href="#">Forum</a></li>
-      </ul>
-    </nav>
+    <div style="background-color: limegreen; overflow: hidden;">
+      <nav>
+          <ul style="list-style-type: none; margin: 0; padding: 0; display: flex; justify-content: space-around;">
+              <li style="display: inline;">
+                  <a href="#" style="display: block; color: black; text-align: center; padding: 5px 5px; text-decoration: none; font-weight: bold;">HOME</a>
+              </li>
+              <li style="display: inline;">
+                  <a href="#" style="display: block; color: black; text-align: center; padding: 5px 5px; text-decoration: none; font-weight: bold;">GET STARTED</a>
+              </li>
+              <li style="display: inline;">
+                  <a href="#" style="display: block; color: black; text-align: center; padding: 5px 5px; text-decoration: none; font-weight: bold;">PHOTOS</a>
+              </li>
+              <li style="display: inline;">
+                  <a href="#" style="display: block; color: black; text-align: center; padding: 5px 5px; text-decoration: none; font-weight: bold;">GEAR</a>
+              </li>
+              <li style="display: inline;">
+                  <a href="#" style="display: block; color: black; text-align: center; padding: 5px 5px; text-decoration: none; font-weight: bold;">FORUM</a>
+              </li>
+          </ul>
+      </nav>
+  </div>
   </header>
   <main>
     <section class="welcome">
-      <h2>Welcome</h2>
+      <h2 style="text-align: center; font-family: 'Apple Chancery', cursive;" >Welcome</h2>
       <p>Welcome to our fake birdwatching site. If this were a real site, it would be the ideal place to come to learn more about birdwatching, whether you are a beginner looking to learn how to get into birding, or an expert wanting to share ideas, tips, and photos with other like-minded people.</p>
       <p>So don't waste time! Get what you need, then turn off that computer and get out into the great outdoors!</p>
     </section>
     <aside class="favourite-photos">
-      <h2>Favourite photos</h2>
+      <h2  style="text-align: center; font-family: 'Apple Chancery', cursive; ">Favourite photos</h2>
       <div class="photos-grid">
         <a href="images/favorite-1.jpg"><img src="images/favorite-1_th.jpg" alt="Small black bird, black claws, long black slender beak, links to larger version of the image"></a>
         <a href="images/favorite-2.jpg"><img src="images/favorite-2_th.jpg" alt="Top half of a pretty bird with bright blue plumage on neck, light colored beak, blue headdress, links to larger version of the image"></a>
